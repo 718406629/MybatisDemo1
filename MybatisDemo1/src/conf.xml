@@ -2,13 +2,18 @@
 <configuration>
 	<environments default="development">
 		<environment id="development">
+			<!-- 事务提交方式： JDBC：利用jdbc方式处理事务（commit rollback close） MANAGED:将事务交由其他组件去托管（spring,jobss）,默认会关闭连接 
+				<transactionManager type="MANAGED" /> <property name="closeConnection" value="false" 
+				/> -->
 			<transactionManager type="JDBC" />
+			<!--数据源类型： UNPOOLED:传统的jdbc模式（每次访问数据库，均需要打开、关闭等数据库） POOLED：使用数据库连接池 JNDI:从Tomcat中获取一个内置的数据连接池（数据库连接池-数据源） -->
 			<dataSource type="POOLED">
-		                  	<!--配置数据库信息  -->
-		        <!-- 连接驱动 -->
+				<!--配置数据库信息 -->
+				<!-- 连接驱动 -->
 				<property name="driver" value="com.mysql.jdbc.Driver" />
 				<!-- 连接地址 -->
-				<property name="url" value="jdbc:mysql://localhost:3306/test" />
+				<property name="url"
+					value="jdbc:mysql://localhost:3306/test" />
 				<!-- 连接账户和密码 -->
 				<property name="username" value="root" />
 				<property name="password" value="15214329839" />
@@ -16,7 +21,7 @@
 		</environment>
 	</environments>
 	<mappers>
-	    <!-- 加载映射文件 -->
+		<!-- 加载映射文件 -->
 		<mapper resource="org/lanqiao/entity/personMapper.xml" />
 	</mappers>
 </configuration>

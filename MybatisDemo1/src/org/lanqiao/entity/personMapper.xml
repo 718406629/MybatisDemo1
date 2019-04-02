@@ -5,4 +5,20 @@
 	<select id="queryPersonById" resultType="org.lanqiao.entity.Person" parameterType="int"> 
 	    select * from person where id= #{id}
     </select>
+    
+    <insert id="addPerson" parameterType="org.lanqiao.entity.Person">
+       insert into person(id,name,age) values(#{id},#{name},#{age})
+    </insert>
+    
+    <update id="updatePersonById" parameterType="org.lanqiao.entity.Person">
+    update person set name=#{name},age=#{age} where id=#{id}
+    </update>
+    
+    <delete id="deletePersonById" parameterType="int">
+    delete from person where id=#{id}
+    </delete>
+    
+    <select id="queryAllPerson" resultType="org.lanqiao.entity.Person">
+    select * from Person
+    </select>
 </mapper>

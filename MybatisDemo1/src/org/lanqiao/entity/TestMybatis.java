@@ -1,5 +1,5 @@
 package org.lanqiao.entity;
-//注释
+//加一段注释
 import java.io.IOException;
 import java.io.Reader;
 import java.util.List;

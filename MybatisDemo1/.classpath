@@ -3,6 +3,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="src/mysql-connector-java-5.1.39.jar"/>
-	<classpathentry kind="lib" path="src/mybatis-3.4.6.jar"/>
+	<classpathentry kind="lib" path="src/mybatis-3.4.6.jar" sourcepath="D:/常用jar包/Mybatis/mybatis-3-mybatis-3.4.6.zip"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

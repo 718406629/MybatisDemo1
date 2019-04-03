@@ -98,8 +98,8 @@ public class TestMybatis {
 	public static void main(String[] args) throws IOException {
 	
 		//addPerson();
-		//queryAllPerson();
-		deletePersonById();
+		queryAllPerson();
+		//deletePersonById();
 		//queryAllPerson();
 		//addPerson();
 		
